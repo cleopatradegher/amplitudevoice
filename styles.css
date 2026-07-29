@@ -1,0 +1,136 @@
+/* Amplitude Voice — deliberately its own look, sharing nothing with the
+   personal site. Sans-serif and teal here vs. the serif personal site. */
+
+:root {
+    --ink: #1c2529;
+    --ink-soft: #55666e;
+    --accent: #12736b;
+    --accent-soft: #e6f2f0;
+    --rule: #dfe6e8;
+    --page: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--ink);
+    background: var(--page);
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* --- hero --- */
+.hero {
+    background: linear-gradient(160deg, var(--accent) 0%, #0d5a54 100%);
+    color: #fff;
+    padding: 5rem 1.5rem 4rem;
+    text-align: center;
+}
+
+.hero-inner { max-width: 40rem; margin: 0 auto; }
+
+.hero h1 {
+    margin: 0 0 0.75rem;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+/* --- nav --- */
+nav {
+    border-bottom: 1px solid var(--rule);
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    font-weight: 500;
+    font-size: 0.98rem;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover { color: var(--accent); }
+nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* --- content --- */
+main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 3rem;
+}
+
+.section { padding: 2.75rem 0; border-bottom: 1px solid var(--rule); }
+.section:last-child { border-bottom: none; }
+
+.section h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    letter-spacing: -0.01em;
+}
+
+.section p { margin: 0 0 1rem; color: var(--ink-soft); font-size: 1.05rem; }
+
+/* --- cards --- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.card p { margin: 0; font-size: 0.97rem; color: var(--ink-soft); }
+
+/* --- footer --- */
+footer {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--rule);
+}
+
+/* --- narrow screens --- */
+@media (max-width: 34rem) {
+    .hero { padding: 3.5rem 1.25rem 3rem; }
+    .hero h1 { font-size: 2.25rem; }
+    .tagline { font-size: 1.08rem; }
+    nav ul { gap: 1.5rem; }
+}
