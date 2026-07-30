@@ -36,7 +36,11 @@ body {
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: -0.02em;
+    line-height: 1.12;      /* two rows, so tighten the default airy spacing */
 }
+
+/* "Amplitude" sits on its own row above "Accent and Voice" */
+.brand-line { display: block; }
 
 .tagline {
     margin: 0;
