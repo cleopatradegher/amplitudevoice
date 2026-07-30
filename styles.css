@@ -116,6 +116,40 @@ main {
 
 .section p { margin: 0 0 1rem; color: var(--ink-soft); font-size: 1.05rem; }
 
+/* --- About sign-off --- */
+.signoff {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+/* Empty circle for now — drop an <img> in here (with this class) once the
+   photo is ready and it'll sit in the same slot, sized and cropped to fit. */
+.signoff-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.signoff-text { line-height: 1.35; }
+
+.signoff-name {
+    margin: 0;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.signoff-title {
+    margin: 0;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+}
+
 /* --- cards --- */
 .cards {
     display: grid;
