@@ -63,8 +63,9 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;          /* six tabs now — wrap rather than overflow on narrow screens */
     justify-content: center;
-    gap: 2rem;
+    gap: 0.6rem 1.5rem;
     margin: 0;
     padding: 1rem;
 }
@@ -108,11 +109,18 @@ main {
     margin-top: 1.5rem;
 }
 
+/* Cards are links down to their own section, so they must not look like body text */
 .card {
+    display: block;
     background: var(--accent-soft);
     border-radius: 10px;
     padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s ease;
 }
+
+.card:hover { background: #dbe8fa; }
 
 .card h3 {
     margin: 0 0 0.5rem;
