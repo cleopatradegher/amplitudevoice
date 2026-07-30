@@ -50,6 +50,20 @@ body {
     color: rgba(255, 255, 255, 0.88);
 }
 
+/* Inner pages keep the brand but not the full-height banner — the name doubles
+   as the link home. */
+.hero.compact { padding: 2.25rem 1.5rem 2rem; }
+
+.hero.compact .brand {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+}
+
 /* --- nav --- */
 nav {
     border-bottom: 1px solid var(--rule);
@@ -92,6 +106,7 @@ main {
 .section { padding: 2.75rem 0; border-bottom: 1px solid var(--rule); }
 .section:last-child { border-bottom: none; }
 
+.section h1,
 .section h2 {
     font-size: 1.6rem;
     font-weight: 600;
