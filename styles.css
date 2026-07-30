@@ -1,12 +1,13 @@
 /* Amplitude Accent and Voice — deliberately its own look, sharing nothing with the
-   personal site. Sans-serif and teal here vs. the serif personal site. */
+   personal site. Sans-serif and blue here vs. the serif personal site. */
 
 :root {
-    --ink: #1c2529;
-    --ink-soft: #55666e;
-    --accent: #12736b;
-    --accent-soft: #e6f2f0;
-    --rule: #dfe6e8;
+    --ink: #1b2430;
+    --ink-soft: #536379;
+    --accent: #1857a4;
+    --accent-deep: #103f7a;   /* gradient foot, for depth in the header */
+    --accent-soft: #e8f0fb;   /* card wash */
+    --rule: #dde4ed;
     --page: #ffffff;
 }
 
@@ -23,7 +24,7 @@ body {
 
 /* --- hero --- */
 .hero {
-    background: linear-gradient(160deg, var(--accent) 0%, #0d5a54 100%);
+    background: linear-gradient(160deg, var(--accent) 0%, var(--accent-deep) 100%);
     color: #fff;
     padding: 5rem 1.5rem 4rem;
     text-align: center;
