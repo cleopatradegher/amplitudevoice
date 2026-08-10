@@ -191,6 +191,27 @@ main {
 
 .faq p { margin: 0; color: var(--ink-soft); font-size: 1rem; }
 
+/* --- testimonials --- */
+.testimonial {
+    margin: 1.5rem 0 0;
+    padding-left: 1.25rem;
+    border-left: 3px solid var(--accent-soft);
+}
+
+.testimonial p {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--ink);
+}
+
 /* --- footer --- */
 footer {
     text-align: center;
