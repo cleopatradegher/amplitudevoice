@@ -334,3 +334,10 @@ footer {
     .tagline { font-size: 1.08rem; }
     nav ul { gap: 1.5rem; }
 }
+
+/* "Listen on Spotify" line at the foot of the Voice Coaching page */
+.listen {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+}
