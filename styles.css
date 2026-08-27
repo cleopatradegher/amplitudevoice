@@ -341,3 +341,10 @@ footer {
     padding-top: 1.25rem;
     border-top: 1px solid var(--rule);
 }
+
+/* Second listen line sits right under the first, no divider */
+.listen-more {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
