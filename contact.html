@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-store">
     <title>Contact — Amplitude Accent and Voice</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=6">
+    <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
     <header class="hero compact">
@@ -33,10 +33,17 @@
     </nav>
 
     <main>
+        <section class="section" id="book">
+            <h1>Book a free consultation</h1>
+            <p>Pick a time that works for you — 15 minutes, no obligation.</p>
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <iframe class="booking" title="Book a free consultation call" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zJWID2LXfBjTC3yGVI8p8HNwMQlucLHqf9GP6MyuZLJ-Z0fib1vh2YYufvY4Z8T_S9PYylt-m?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+            <!-- end Google Calendar Appointment Scheduling -->
+        </section>
+
         <section class="section">
-            <h1>Get in touch</h1>
-            <p>Send a message and it'll open in your email app, ready to send
-               to Cleopatra.</p>
+            <h2>Or send a message</h2>
+            <p>It'll open in your email app, ready to send to Cleopatra.</p>
             <form class="contact-form" action="mailto:cleopatra@amplitudevoice.com" method="post" enctype="text/plain">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="Name" required>
