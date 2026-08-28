@@ -388,7 +388,7 @@ footer {
 
 .section::after { content: ""; display: block; clear: both; }
 
-.signoff { margin-top: 1rem; }
+.signoff { margin-top: 2.25rem; }
 
 @media (max-width: 34rem) {
     .about-photo {
