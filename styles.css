@@ -55,11 +55,18 @@ body {
     color: #fff;
 }
 
+/* Subtitle under the name: set apart by a short hairline and a lighter,
+   italic voice so it doesn't read as a third line of the brand. */
 .tagline {
-    margin: 0;
-    font-size: 1.2rem;
+    margin: 1.75rem auto 0;
+    padding-top: 1.25rem;
+    max-width: 22rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    font-size: 1.05rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.88);
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Inner pages keep the brand but not the full-height banner — the name doubles
@@ -350,7 +357,7 @@ footer {
     .hero { padding: 3.5rem 1.25rem 3rem; }
     .hero h1 { font-size: 1.1rem; }
     .brand-line { font-size: 2.9rem; }
-    .tagline { font-size: 1.08rem; }
+    .tagline { font-size: 1rem; }
     nav ul { gap: 1.5rem; }
 }
 
