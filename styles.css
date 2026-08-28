@@ -32,16 +32,28 @@ body {
 
 .hero-inner { max-width: 40rem; margin: 0 auto; }
 
+/* The name is two rows: "Amplitude" big and bold, "Accent and Voice" quieter
+   beneath it — the h1/.brand carry the second row's size, .brand-line the first. */
 .hero h1 {
     margin: 0 0 0.75rem;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.12;      /* two rows, so tighten the default airy spacing */
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.9);
 }
 
-/* "Amplitude" sits on its own row above "Accent and Voice" */
-.brand-line { display: block; }
+.brand-line {
+    display: block;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    text-transform: none;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+    color: #fff;
+}
 
 .tagline {
     margin: 0;
@@ -56,12 +68,18 @@ body {
 
 .hero.compact .brand {
     display: inline-block;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.12;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.hero.compact .brand-line {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
 }
 
 /* --- nav --- */
@@ -330,7 +348,8 @@ footer {
 /* --- narrow screens --- */
 @media (max-width: 34rem) {
     .hero { padding: 3.5rem 1.25rem 3rem; }
-    .hero h1 { font-size: 2.25rem; }
+    .hero h1 { font-size: 1.1rem; }
+    .brand-line { font-size: 2.9rem; }
     .tagline { font-size: 1.08rem; }
     nav ul { gap: 1.5rem; }
 }
