@@ -399,3 +399,27 @@ footer {
         margin: 0 auto 1.5rem;
     }
 }
+
+/* --- pricing --- */
+.price-head {
+    margin: 1.75rem 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.price-head:first-of-type { margin-top: 0.5rem; }
+
+.price-list {
+    margin: 0 0 1rem;
+    padding-left: 1.25rem;
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+}
+
+.price-list li { margin-bottom: 0.5rem; }
+
+.price-list strong { color: var(--ink); font-weight: 600; }
+
+.price-total { color: var(--ink-soft); }
+.price-total strong { color: var(--accent); font-weight: 600; }
