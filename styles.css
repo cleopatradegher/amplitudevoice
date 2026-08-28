@@ -374,3 +374,28 @@ footer {
     padding-top: 0;
     border-top: none;
 }
+
+/* --- About photo (top of the section, text wraps beside it) --- */
+.about-photo {
+    float: left;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0.25rem 1.75rem 1rem 0;
+    box-shadow: 0 6px 18px rgba(27, 36, 48, 0.12);
+}
+
+.section::after { content: ""; display: block; clear: both; }
+
+.signoff { margin-top: 1rem; }
+
+@media (max-width: 34rem) {
+    .about-photo {
+        float: none;
+        display: block;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 1.5rem;
+    }
+}
