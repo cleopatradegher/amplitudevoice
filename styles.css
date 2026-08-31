@@ -434,8 +434,9 @@ footer {
     color: var(--ink);
 }
 
-/* Parenthetical after the Accent Coaching heading — lighter, not a second size jump */
+/* Parenthetical after the Accent Coaching heading — lighter and smaller */
 .subhead {
     font-weight: 400;
+    font-size: 0.85rem;
     color: var(--ink-soft);
 }
