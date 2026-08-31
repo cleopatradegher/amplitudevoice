@@ -426,7 +426,7 @@ footer {
 
 /* "Based in the Bay Area" line on the Contact page */
 .location {
-    margin-top: 3rem;
+    margin-top: 4.5rem;
     font-weight: 500;
     color: var(--ink);
 }
