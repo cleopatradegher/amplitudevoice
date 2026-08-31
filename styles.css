@@ -424,9 +424,11 @@ footer {
 .price-total { color: var(--ink-soft); }
 .price-total strong { color: var(--accent); font-weight: 600; }
 
-/* "Based in the Bay Area" line on the Contact page */
-.location {
-    margin-top: 4.5rem;
+/* "Based in the Bay Area" line on the Contact page.
+   Scoped as .section p.location so it beats ".section p"'s margin shorthand,
+   which otherwise resets the top margin to zero. */
+.section p.location {
+    margin-top: 3rem;
     font-weight: 500;
     color: var(--ink);
 }
