@@ -204,7 +204,7 @@ main {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-top: 1.75rem;
+    margin-top: 3rem;
 }
 
 .signoff-photo {
@@ -426,7 +426,7 @@ footer {
 
 /* "Based in the Bay Area" line on the Contact page */
 .location {
-    margin-top: 1.75rem;
+    margin-top: 3rem;
     font-weight: 500;
     color: var(--ink);
 }
