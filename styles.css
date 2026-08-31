@@ -447,3 +447,10 @@ footer {
     font-size: 0.9rem;
     color: var(--ink-soft);
 }
+
+/* Lead line under the Pricing heading pointing to the founding rate */
+.price-lead {
+    margin-top: -0.5rem;
+    font-weight: 500;
+    color: var(--accent);
+}
