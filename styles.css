@@ -454,3 +454,14 @@ footer {
     font-weight: 500;
     color: var(--accent);
 }
+
+/* Highlighted box around the founding client rate */
+.founding-box {
+    margin-top: 2rem;
+    padding: 1.5rem 1.75rem;
+    background: var(--accent-soft);
+    border: 1px solid #cfe0f6;
+    border-radius: 12px;
+}
+
+.founding-box .price-head:first-child { margin-top: 0; }
