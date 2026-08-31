@@ -423,3 +423,9 @@ footer {
 
 .price-total { color: var(--ink-soft); }
 .price-total strong { color: var(--accent); font-weight: 600; }
+
+/* "Based in the Bay Area" line on the Contact page */
+.location {
+    font-weight: 500;
+    color: var(--ink);
+}
