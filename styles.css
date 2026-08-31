@@ -77,7 +77,7 @@ body {
     display: inline-block;
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 1.05rem;
     font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -437,6 +437,6 @@ footer {
 /* Parenthetical after the Accent Coaching heading — lighter and smaller */
 .subhead {
     font-weight: 400;
-    font-size: 0.85rem;
+    font-size: 1.05rem;
     color: var(--ink-soft);
 }
