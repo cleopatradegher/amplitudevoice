@@ -197,6 +197,12 @@ main {
     margin-top: 1rem;
     border-radius: 10px;
     background: var(--accent-soft);
+    /* Break out wider than the 44rem text column so Google's scheduler
+       shows a full work-week (about five days) instead of two. Capped to
+       the viewport on small screens so it never overflows. */
+    width: min(58rem, calc(100vw - 3rem));
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 /* --- About sign-off --- */
