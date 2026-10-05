@@ -69,6 +69,36 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* Home hero: the two sides of the business, set side by side on wide screens
+   and stacked on narrow ones, divided by a hairline like the old tagline. */
+.offerings {
+    margin: 1.75rem auto 0;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    display: flex;
+    gap: 1.75rem;
+    text-align: center;
+}
+.offering { flex: 1; }
+.offering + .offering {
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    padding-left: 1.75rem;
+}
+.offering-title {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+.offering-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 /* Inner pages keep the brand but not the full-height banner — the name doubles
    as the link home. */
 .hero.compact { padding: 2.25rem 1.5rem 2rem; }
@@ -366,6 +396,13 @@ footer {
     .brand-line { font-size: 2.9rem; }
     .tagline { font-size: 1rem; }
     nav ul { gap: 1.5rem; }
+    .offerings { flex-direction: column; gap: 1.25rem; }
+    .offering + .offering {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        padding-top: 1.25rem;
+    }
 }
 
 /* "Listen on Spotify" line at the foot of the Voice Coaching page */
