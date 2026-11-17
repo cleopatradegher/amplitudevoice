@@ -468,6 +468,29 @@ footer {
 .price-total { color: var(--ink-soft); }
 .price-total strong { color: var(--accent); font-weight: 600; }
 
+/* Pricing table (Singing Lessons) */
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 1rem;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+}
+.price-table th {
+    background: var(--accent);
+    color: #fff;
+    text-align: left;
+    padding: 0.7rem 1rem;
+    font-weight: 600;
+    font-size: 0.97rem;
+}
+.price-table td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid var(--accent-soft);
+}
+.price-table tbody tr:nth-child(even) { background: var(--accent-soft); }
+.price-table td:first-child { color: var(--ink); font-weight: 600; }
+
 /* "Based in the Bay Area" line on the Contact page.
    Scoped as .section p.location so it beats ".section p"'s margin shorthand,
    which otherwise resets the top margin to zero. */
